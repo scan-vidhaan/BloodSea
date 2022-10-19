@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>BloodSea</title>
+  </head>
+  <body style="background-color: 	#880808;">
+    <nav class="navbar navbar-light-bg-style-fixed-top" style="background-color: #ffbf00;">
+        <form class="container-fluid justify-content-start">
+          <a button class="btn btn-style" href="https://www.instagram.com/bloodsea20/" type="button" style="background-color: #880808 ; color: thistle;"> Instagram</button> </a>
+        </form>
+    </form>
+      </nav>
+      </nav>
+      <h1 style="text-align: center; font-style:italic; trajan; padding-top: 80px;  ; color: orange; padding-bottom: 20px;"> <b> Blood Donation Eligibility Checker  </b> </h1>
+   
+      <img src= "https://raw.githubusercontent.com/scan-vidhaan/covibot-picture/main/Untitled%20design%20(43).gif"  width="400px" height="400px"class="rounded mx-auto d-block" alt="...">
+      <div class="container">
+      <form method="post "autocomplete="off" name="google-sheet">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" style="color:orange ;">Age</label>
+          <input type="number" name="name" class="form-control" id="age" aria-describedby="emailHelp"Required>
+          <h1 style="text-align: center; font-style:italic; trajan; padding-top: 20px;; ; color: #00003f; padding-bottom: x; font-size: ;"> <b></b> </h1>
+          <label for="exampleInputEmail1" class="form-label"style="color:orange ;">Duration Of Previous Donation(in months) if none fill 0</label>
+          <input type="number" name="college" class="form-control" id="duration" aria-describedby="emailHelp"Required>
+          <h1 style="text-align: center; font-style:italic; trajan; padding-top: 20px;; ; color: #00003f; padding-bottom: x; font-size: ;"> <b></b> </h1>
+          <label for="exampleInputEmail1" class="form-label"style="color:orange ;">Weight</label>
+          <input type="number" name="email" class="form-control" id="weight" aria-describedby="emailHelp" required>
+          <h1 style="text-align: center; font-style:italic; trajan; padding-top: 20px;; ; color: #00003f; padding-bottom: x; font-size: ;"> <b></b> </h1>
+          <select class="form-select" aria-label="Default select example">
+            <option selected id="medical" style="color:orange">Medical Conditions(Comorbidities,STDs,Pregnancy)</option>
+            <option value="yes">Yes</option>
+            <option value="No">No</option>
+
+          
+          </select>
+          <h1 style="text-align: center; font-style:italic; trajan; padding-top: 20px;; ; color: #00003f; padding-bottom: x; font-size: ;"> <b></b> </h1>
+          <label for="exampleInputEmail1" class="form-label" style="color:orange ;">Duration Since last Tattoo or Piercing(months) if none fill 0</label>
+          <input type="number" name="name" class="form-control" id="tattooo" aria-describedby="emailHelp"Required>
+
+
+         
+          
+
+          
+          <h1 style="text-align: center; font-style:italic; trajan; padding-top: 20px;; ; color: #00003f; padding-bottom: x; font-size: ;"> <b></b> </h1>
+         
+          <a button type="submit" onclick="checker()" class="btn btn-warning">Calculate</button> </a>
+      
+        </div>
+
+      <footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+      
+            <!--Grid column-->
+            <div class="col-md-6">
+      
+           
+      
+            </div>
+            <!--Grid column-->
+      
+          </div>
+          <!--Grid row-->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: #00003f;; padding-top: 40px;">Developed by Vidhaan with &#10084;
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+          <a href="https://www.instagram.com/sidhaanhealthtrust/"> SHT</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      
+      
+      
+      <script>
+        function checker(){
+           var age=document.getElementById('age').value;
+           var duration=document.getElementById('duration').value;
+           var weight=document.getElementById('weight').value;
+           var medical=document.getElementById('medical').value;
+           var tattooo=document.getElementById('tattooo').value;
+           if(age>=18 && age<=65 && duration==0 || duration>4 && weight>50 && medical=='No' && tattooo==0||tattooo>=6){
+            alert('You are eligible to register for blood donation :) ');
+           }else{
+            alert('You are not eligible to register for blood donation :(');
+           }
+        }
+      </script>
+      
+      
+      
+    
+         
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzw23N4p2wN9oWA6KzEqVsXejfLYQsDPF3Y8bb7Ml3qENDs7P7yG4PcK4SJ8i55FhU/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+  </body>
+</html>
+
