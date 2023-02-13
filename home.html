@@ -50,8 +50,15 @@
         <h2 style="text-align:left; font-style:italic; trajan; padding-top: 20px; font-size:xx-large; "> <b></b> </h2>
         <div class="d-grid gap-2 col-4 mx-auto">
       
+       
+        
+            <a class="btn btn-style" href="https://chat.whatsapp.com/KWlzTouKmxr0TUnvok20qV" onclick="request()" role="button" style="background-color:  #ffbf00; color: black;border-radius: 24px;">Request for Donors  </a>
+            </div>
+            <h2 style="text-align:left; font-style:italic; trajan; padding-top: 20px; font-size:xx-large; "> <b></b> </h2>
+        <div class="d-grid gap-2 col-4 mx-auto">
+      
           
-            <a class="btn btn-style" href="Donorlist.html" role="button" style="background-color:  #ffbf00; color: black;border-radius: 24px;"> Donor List</a>
+            <a class="btn btn-style" onclick="contact()" role="button" style="background-color:  #ffbf00; color: black;border-radius: 24px;"> Donor List</a>
             </div>
             <div class="d-grid gap-2 col-4 mx-auto">
       
@@ -149,6 +156,13 @@
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
+  }
+
+  function contact(){
+    alert("If any Emergency Contact +918105679934");
+  }
+  function request(){
+    alert("You will be redirected to the whatsapp group where you can message the blood requiremnts\n Click on OK to proceed")
   }
  </script>
 
